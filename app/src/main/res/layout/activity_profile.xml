@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Текст для заголовка профиля -->
+    <TextView
+        android:id="@+id/userProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:textSize="28sp"
+        android:layout_marginTop="120sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+    <!-- Изображение профиля -->
+    <ImageView
+        tools:srcCompat="@tools:sample/avatars"
+        android:id="@+id/userProfileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/userProfileText"
+        android:layout_marginTop="120sp"
+        android:contentDescription="Изображение профиля"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Кнопка редактирования профиля -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Редактировать"
+        android:layout_below="@id/userProfileImage"
+        android:layout_marginTop="120sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

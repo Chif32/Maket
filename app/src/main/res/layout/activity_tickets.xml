@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заявки пользователя"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/titleText"/>
+
+    <!-- Список заявок -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/titleText"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:id="@+id/listView"/>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить заявку"
+        android:layout_below="@id/listView"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить заявку"
+        android:layout_below="@id/listView"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

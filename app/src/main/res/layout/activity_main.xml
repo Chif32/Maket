@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Чат с поддержкой"
+       android:layout_marginTop="120sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnTickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мои заявки"
+        android:layout_marginTop="180sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:layout_below="@id/btnChat"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:text="Профиль"
+        android:layout_below="@id/btnTickets"/>
+
+</RelativeLayout>
